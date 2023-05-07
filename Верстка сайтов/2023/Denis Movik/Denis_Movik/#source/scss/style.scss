@@ -1,0 +1,367 @@
+@import "_null.scss";
+@import "_variable.scss";
+
+.container{
+    max-width:1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header-burger{
+    display: block;
+}
+
+.active{
+    color: $color_black;
+}
+
+// header
+.header{
+    margin-bottom: 40px;
+}
+
+.header_nav{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 1px solid $color_gray;
+}
+
+a{
+    font-family: $font_family_gilroy-bold;
+    font-size: 18px;
+    color: $color_gray;
+    transition: $animation;
+    &:hover{
+        color: $color_black;
+    }
+}
+
+.header-burger{
+    display: none;
+    position: relative;
+    width: 33px;
+    height: 19px;
+    z-index: 3;
+    margin-top: 60px;
+    margin-left: 90%;
+    transition: $animation;
+    span{
+        position: absolute;
+        width: 33px;
+        height: 3px;
+        background: #000;
+        left:0;
+        transition: $animation;
+        &:nth-child(1){
+            transform: translateY(-9px);
+
+        }
+        &:nth-child(3){
+            transform: translateY(9px);
+        }
+    }
+}
+
+.header.open span:nth-child(1){
+    transform: translateY(0) rotate(45deg);
+    width: 27px;
+}
+
+.header.open span{
+    transform: translateY(0) rotate(45deg);
+    background-color: $color_gray;
+}
+
+.header.open span:nth-child(2){
+    opacity: 0;
+}
+
+.header.open span:nth-child(3){
+    transform: translateY(0) rotate(-45deg);
+    width: 27px;
+}
+
+.change-lang{
+    display: inline;
+    scrollbar-width: none;
+    border: none;
+    option{
+        display: inline;
+    }
+}
+// /header
+
+// person
+.person{
+    margin-bottom: 100px;
+}
+
+.title_wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 155px) auto;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    .person_name{
+        font-size: 48px;
+        line-height: 60px;
+        color: $color_black;
+        font-family: $font_family_gilroy-bold;
+    }
+    .person_name, .person_description{
+        display: flex;
+        align-items:flex-end;
+    }
+    .person_description{
+        padding-bottom: 10px;
+        font-family: $font_family_gilroy-medium;
+        font-size: 18px;
+        line-height: 20px;
+        color: $color_black;
+    }
+}
+
+.change-lang{
+    padding-top: 10px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: 16px;
+    font-family: $font_family_gilroy-bold;
+    color: $color_gray;
+    span{
+        transition: $animation;
+        cursor: pointer;
+        &:hover{
+            color: $color_black;
+        }
+    }
+}
+
+.person_img{
+    width: 100%;
+}
+// /person
+
+// about
+.about{
+    padding: 100px 0;
+    background-color: $color_gray-bg;
+    margin-bottom: 90px;
+}
+.about_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 220px;
+    max-width: 450px;
+    margin: 0 auto;
+    h1,p{
+        text-align: center;
+        color: $color_black;
+    }
+    h1{
+        font-family: $font_family_gilroy-bold;
+        font-size: 34px;
+    }
+    p{
+        font-family: $font_family_gilroy-medium;
+        font-size: 18px;
+    }
+}
+// /about
+
+// skills
+.skills_wrapper{
+    text-align: center;
+}
+.skills_title, .skills_subtitle{
+    color: $color_black;
+}
+.skills_title{
+    font-size: 34px;
+    font-family: $font_family_gilroy-bold;
+    margin-bottom: 70px;
+}
+
+.skills_subtitle{
+    font-family: $font_family_gilroy-medium;
+    font-size: 18px;
+}
+
+.skills_applications{
+    display: grid;
+    grid-template-columns: repeat(4, 170px);
+    margin-top: 80px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.application_item{
+    margin-bottom: 80px;
+    .application_title{
+        margin: 25px 0 40px 0;
+        font-size: 14px;
+        font-family: $font_family_gilroy-bold;
+        color: $color_gray;
+    }
+}
+// /skills
+
+// portfolio
+.portfolio{
+    background-color: $color_gray-bg;
+    margin-bottom: 110px;
+}
+
+.portfolio_wrapper{
+    text-align: center;
+    img{
+        width: 100%;
+    }
+    .portfolio_title{
+        padding: 100px 0 50px 0;
+        font-family: $font_family_gilroy-bold;
+        font-size: 34px;
+    }
+    .portfolio_desc{
+        margin: 40px 0 100px 0;
+        font-size: 18px;
+        font-family: $font_family_gilroy-medium;
+        color: $color_black;
+        text-decoration-line: underline;
+        cursor: pointer;
+        &:last-child{
+            margin-bottom: 0;
+            padding-bottom: 100px;
+        }
+    }
+    
+}
+// /portfolio
+
+// contacts
+.contacts_wrapper{
+    text-align: center;
+}
+.contats_block{
+    .contacts_title, .contacts_button{
+        font-family: $font_family_gilroy-bold;
+    }
+    .contacts_title, .contacts_desk{
+        color: $color_black;
+    }
+    .contacts_desk, .contacts_button{
+        font-size: 18px;
+    }
+    .contacts_title{
+        margin-bottom: 30px;
+        font-size: 34px;
+    }
+    .contacts_desk{
+        font-family: $font_family_gilroy-medium;
+        max-width: 275px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        line-height: 22px;
+    }
+    .contacts_button{
+        display: inline-block;
+        color: #fff;
+        background-color: $color_black;
+        padding: 12px 30px;
+        border-radius: 40px;
+        transform: $animation;
+        cursor: pointer;
+        margin-bottom: 85px;
+        &:hover{
+            padding: 6px 24px 14px 20px;
+            transform: translateY(6px);
+        }
+    }
+}
+
+.contacts_images{
+    display: flex;
+    justify-content: space-between;
+    max-width: 340px;
+    margin: 0 auto;
+    margin-bottom: 45px;
+}
+.contacts_text{
+    color: $color_gray;
+    font-size: 14px;
+    font-family: $font_family_gilroy-medium;
+    line-height: 17px;
+    max-width: 244px;
+    margin: 0 auto;
+}
+
+// /contacts
+
+// adaptiv
+// 700px
+@media(max-width:700px){
+    .skills_applications{
+        display: grid;
+        grid-template-columns: repeat(2, 170px);
+        margin: 80px 0 100px 0;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+// 400px
+@media(max-width:400px){
+    .header.open .header_nav{
+        transform: translateY(100%);
+    }
+    .header_nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        background-color: #fff;
+        padding: 120px 20px 20px 20px;
+        transition: $animation;
+        top: -500px;
+        z-index: 3;
+        a{
+            display: block;
+            font-family: $font_family_gilroy-bold;
+            font-size: 34px;
+            color: $color_gray;
+            margin-right: 50px;
+            margin-bottom: 30px;
+        }
+    }
+    .header-burger{
+        display: initial;
+    }
+    .change-lang{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(-100px);
+    }
+
+    .title_wrapper{
+        display: block;
+        .person_name{
+            font-size: 47px;
+            max-width: 150px;
+        }
+        .person_description{
+            max-width: 155px;
+        }
+    }
+    .skills_applications{
+        display: grid;
+        grid-template-columns: repeat(1, 170px);
+        margin: 80px 0 100px 0;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+

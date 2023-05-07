@@ -1,0 +1,19 @@
+// Шрифты
+@font-face {
+    font-family: gilroy-bold;
+    src: url(../fonts/gilroy/gilroy-bold.ttf);
+}
+@font-face {
+    font-family: gilroy-medium;
+    src: url(../fonts/gilroy/gilroy-medium.ttf);
+}
+
+// Переменные:
+$color_black:#070707;
+$color_gray:#828282;
+$color_gray-bg: #F6F6F6;
+
+$font_family_gilroy-bold:gilroy-bold;
+$font_family_gilroy-medium:gilroy-medium;
+
+$animation:all .3s ease;
