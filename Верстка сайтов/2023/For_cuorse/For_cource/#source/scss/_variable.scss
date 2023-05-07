@@ -1,0 +1,21 @@
+@font-face {
+    font-family: mulish-italic;
+    src: url(../fonts/Mulish/Mulish-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: mulish;
+    src: url(../fonts/Mulish/Mulish-VariableFont_wght.ttf);
+}
+
+$font_family_mulish-italic: mulish-italic;
+$font_family_mulish: mulish;
+
+$color_black:#000000;
+$color_white:#ffff;
+$color_bg: #1E1E1E;
+$color_green-light: #F9F9F9;
+$color_red-light: #FFCFCF;
+$color_gray: #D9D9D9;
+
+$animation: all .3s ease;

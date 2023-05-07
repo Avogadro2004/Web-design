@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+/* ______________________ */
+@font-face {
+  font-family: mulish-italic;
+  src: url(../fonts/Mulish/Mulish-Italic-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: mulish;
+  src: url(../fonts/Mulish/Mulish-VariableFont_wght.ttf);
+}
+.active {
+  background-color: #FFCFCF;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header_video {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: -2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-attachment: fixed;
+}
+
+.header_effects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.header_wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header_wrapper .header_title, .header_wrapper .header_button {
+  font-family: mulish;
+}
+.header_wrapper .header_title {
+  font-size: 48px;
+}
+.header_wrapper .header_button {
+  font-size: 36px;
+  color: white;
+  background-color: #000000;
+  padding: 12px 50px;
+  border-radius: 15px;
+  border: 3px solid #000000;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+.header_wrapper .header_button:hover {
+  background-color: white;
+  color: #000000;
+}
+.header_wrapper .header_button:active {
+  background-color: #000000;
+  color: white;
+}
+
+.main {
+  background-color: #1E1E1E;
+}
+
+.main_wrapper {
+  padding-top: 64px;
+}
+
+.main_nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background-color: #F9F9F9;
+  text-align: center;
+}
+.main_nav .main_item {
+  padding: 18px 0;
+  color: #000000;
+  font-family: mulish;
+  font-size: 24px;
+}
+
+.main_block {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: flex-end;
+  gap: 60px;
+  transition: all 0.3s ease;
+}
+
+.main_col1 {
+  display: flex;
+  flex-basis: 200px;
+  height: 600px;
+  background-color: white;
+}
+
+.main_col1, .main_col2 {
+  margin-bottom: 300px;
+}
+
+.main_col2 {
+  display: flex;
+  flex-basis: 300px;
+  height: 300px;
+  background-color: white;
+}
+
+.main_col-pos {
+  margin-right: 30px;
+}
+.main_col-pos .main_colors, .main_col-pos .main_position {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
+.main_col-pos .main_btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 20px 60px;
+  background-color: #D9D9D9;
+  font-family: mulish;
+  font-size: 24px;
+}
+
+.papper_btns {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.papper_btns .btn_paper {
+  padding: 10px 15px;
+  font-family: mulish;
+}
+
+.papper_btns2 .btn_paper {
+  padding: 10px 15px;
+  font-family: mulish;
+}
+
+.space {
+  height: 100px;
+}
+
+.bg_white {
+  background-color: #fff;
+}
+
+.bg_grey {
+  background-color: #666;
+}
+
+.bg_black {
+  background-color: #000;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}/*# sourceMappingURL=style.css.map */
