@@ -1,0 +1,58 @@
+@import "_null.scss";
+body{
+    background-color: rgb(204, 201, 201);
+}
+.form_wrapper{
+    width: 400px;
+    padding: 2rem 0 1rem 0;
+    margin: 45px auto;
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 20px 35px rgb(121, 117, 117);
+    text-align: center;
+    .form_title{
+        color: rgb(89, 171, 177);
+        font-size: 32px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        border-bottom: solid 1px;
+    }
+    .form{
+        text-align: center;
+        .input{
+            margin: 0 auto;
+            display: block;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            height: 35px;
+            width: 60%;
+            background-color: rgb(204, 226, 228);
+            padding-left: 10px;
+            transition: all .3s;
+            font-size: 18px;
+            color: rgb(34, 34, 34);
+            &:hover{
+                background-color: rgb(169, 185, 187);
+            }
+            &:focus{
+                background-color: rgb(169, 185, 187);
+            }
+        }
+    }
+    .btns{
+        display: flex;
+        justify-content: center;
+    .button{
+        padding: 15px 40px;
+        border-radius: 10px;
+        background-color: rgb(62, 138, 145);
+        font-size: 18px;
+        color: white;
+        transition: all .3s;
+        &:hover{
+            background-color: rgb(85, 184, 189); 
+        }
+    }
+    }
+}
