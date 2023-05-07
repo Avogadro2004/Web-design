@@ -1,0 +1,23 @@
+// Шрифты
+@font-face {
+    font-family: Jost;
+    src: url(../font/jost/Jost-VariableFont_wght.ttf);
+}
+// Переменные
+    // Шрифты
+$font_family_jost:Jost;
+    // Цвета
+$color_black:black;
+$color_black-36:#2c2c36;
+$color_gray-168: rgb(175, 168, 168);
+$color_white-f8:#F8F8F8;
+$color_white:#FFF;
+
+$color_brown-04: #402404;
+$color_orange-0b:#FF784F;
+$color_orange-71: #ffbe71;
+$color_orange-b7:#ffe0b7;
+
+
+$animation:all 0.3s ease-out;
+
